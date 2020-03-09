@@ -15,4 +15,4 @@ configs and edits are made in line.
 
 This package is distributed under the terms of the [MIT License][0].
 
-  [0]: https://github.com/pkmn/types/blob/master/LICENSE
+  [0]: https://github.com/pkmn/eslint-config/blob/master/LICENSE
