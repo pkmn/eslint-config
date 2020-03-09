@@ -1,0 +1,19 @@
+{
+  "name": "@pkmn/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint configuration from @pkmn based on Pokémon Showdown's style",
+  "repository": "github:pkmn/eslint-config",
+  "contributors": [
+    "Guangcong Luo <zarel@pokemonshowdown.com>",
+    "Kirk Scheibelhut <pre@pkmn.cc>",
+    "Waleed Hassan <waleed.hassan.aidid@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "eslint-plugin-import": "^2.20.1",
+    "typescript": "^3.8.3"
+  }
+}
