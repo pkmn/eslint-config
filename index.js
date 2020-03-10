@@ -265,5 +265,18 @@ module.exports = {
         "@typescript-eslint/prefer-regexp-exec": "error",
       }
     },
+    {
+      "files": ["**/*.test.ts"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+      ],
+      "plugins": [
+        "jest"
+      ],
+      "env": {
+        "jest/globals": true
+      },
+    }
   ]
 };
