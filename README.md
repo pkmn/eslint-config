@@ -1,4 +1,5 @@
 # @pkmn/eslint-config
+[![npm version](https://img.shields.io/npm/v/@pkmn/eslint-config.svg)](https://www.npmjs.com/package/@pkmn/eslint-config)&nbsp;
 
 ESLint configuration based on Pokémon Showdown's style used by `@pkmn` projects:
 
