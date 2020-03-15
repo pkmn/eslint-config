@@ -16,7 +16,7 @@ module.exports = {
     "no-console": "off",
 
     // bad code, modern (new code patterns we don't like because they're less readable or performant)
-    "no-restricted-globals": ["error", "Proxy", "Reflect", "Symbol", "WeakSet"],
+    "no-restricted-globals": ["error", "Proxy", "Reflect", "WeakSet"],
 
     // bad code, deprecated (deprecated/bad patterns that should be written a different way)
     "eqeqeq": "error",
@@ -55,8 +55,7 @@ module.exports = {
     "no-label-var": "error",
     "no-new-require": "error",
     "no-new": "error",
-    "no-redeclare": "error",
-    "no-return-await": "error",
+    "no-redeclare": "off", // Useful with type namespaces
     "no-self-compare": "error",
     "no-sequences": "error",
     "no-shadow-restricted-names": "error",
@@ -206,6 +205,7 @@ module.exports = {
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+        "@typescript-eslint/return-await": "in-try-catch",
         "import/no-extraneous-dependencies": "error",
         "no-dupe-class-members": "off",
         "no-unused-expressions": ["error", {"allowTernary": true}], // ternary is used to convert callbacks to Promises
