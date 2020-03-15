@@ -205,7 +205,7 @@ module.exports = {
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
-        "@typescript-eslint/return-await": "in-try-catch",
+        "@typescript-eslint/return-await": ["error", "in-try-catch"],
         "import/no-extraneous-dependencies": "error",
         "no-dupe-class-members": "off",
         "no-unused-expressions": ["error", {"allowTernary": true}], // ternary is used to convert callbacks to Promises
