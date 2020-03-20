@@ -147,7 +147,7 @@ module.exports = {
     "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 1}],
     "no-trailing-spaces": ["error", {"ignoreComments": false}],
     "object-curly-spacing": ["error", "never"],
-    "operator-linebreak": ["error", "after"],
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
     "padded-blocks": ["error", "never"],
     "padding-line-between-statements": "off",
     "rest-spread-spacing": ["error", "never"],
@@ -280,3 +280,4 @@ module.exports = {
     }
   ]
 };
+
