@@ -266,7 +266,7 @@ module.exports = {
       }
     },
     {
-      "files": ["*.test.ts", "**/*.test.ts"],
+      "files": ["**/*.test.ts"],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest/style",
