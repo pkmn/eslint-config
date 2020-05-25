@@ -233,9 +233,8 @@ module.exports = {
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/unified-signatures": "error",
 
-        // syntax style, overriding base
         "quotes": "off",
-        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/quotes": ["error", "single"],
         "semi": "off",
         "@typescript-eslint/semi": ["error", "always"],
 
@@ -253,7 +252,9 @@ module.exports = {
         // "@typescript-eslint/switch-exhaustiveness-check": "error",
 
         // types - probably bugs
-        "@typescript-eslint/no-floating-promises": ["error", {"ignoreVoid": true}],
+        "@typescript-eslint/no-floating-promises": [
+          "error", {"ignoreVoid": false, "ignoreIIFE": true}
+        ],
         "@typescript-eslint/no-for-in-array": "error",
         "@typescript-eslint/no-misused-promises": "error",
         "@typescript-eslint/no-throw-literal": "error",
