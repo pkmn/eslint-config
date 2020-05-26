@@ -192,7 +192,7 @@ module.exports = {
         "no-shadow": "error",
 
         // typescript-eslint defaults too strict
-        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
@@ -212,8 +212,6 @@ module.exports = {
 
         // naming style
         "@typescript-eslint/camelcase": "off",
-        "@typescript-eslint/class-name-casing": "error",
-        "@typescript-eslint/interface-name-prefix": "error",
 
         // syntax style (local syntactical, usually autofixable formatting decisions)
         "@typescript-eslint/adjacent-overload-signatures": "error",
