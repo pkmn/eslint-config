@@ -97,7 +97,7 @@ module.exports = {
     "comma-style": ["error", "last"],
     "curly": ["error", "multi-line", "consistent"],
     "dot-notation": "off",
-    "max-len": ["error", {"code": 100}],
+    "max-len": ["error", {"code": 100, "ignoreUrls": true}],
     "new-parens": "error",
     "no-array-constructor": "error",
     "no-div-regex": "error",
