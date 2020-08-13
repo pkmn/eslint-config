@@ -14,7 +14,7 @@ ESLint configuration used by [`@pkmn`][3] projects based off of [Pokémon Showdo
 **NOTE:** Ideally this package would extend a `@pokemon-showdown/eslint-config` and just override
 the places where it differs (eg. spaces vs. tabs, combining `.eslintrc-types.json` and
 `.eslintrc-no-types.json` into one file). Until then, this package copies Pokémon Showdown's configs
-and edits are made in line.
+and edits are made inline.
 
 ## Rationale
 
@@ -28,7 +28,7 @@ meaning, in an effort to reduce the space of options defaulting to `undefined` m
 
 - `null` is easy to avoid in the language whereas `undefined` shows up far more often (eg. it is the
   default value for variables, it gets returned by library functions etc)
-- `typeof null === 'object'` is perhaps useful as an it makes sense for an 'empty object refernece',
+- `typeof null === 'object'` is perhaps useful as it makes sense for an 'empty object reference',
   but overall seems more likely to cause problems than `typeof undefined === 'undefined'`
 - `foo?: bar` notation is TypeScript is more convenient than `foo: bar | null` (though `foo: bar |
   undefined` is relatively obtuse and means something slightly different than `foo?: bar`)
@@ -41,8 +41,8 @@ class as it gains more fields can cause it to become megamorphic).
 
 The same argument about 'removing unnecessary elements' can be applied to justify favoring spaces
 over tabs - using both is unnecessary, and using spaces for everything (indentation and spacing
-within a line) is more practicial than only using tabs for everything. Once again, like with
-`null` vs `undefined` where nuanced distrinctions exist and its possible to make an argument for
+within a line) is more practical than only using tabs for indenting. Once again, like with
+`null` vs `undefined` where nuanced distinctions exist and its possible to make an argument for
 preferring one over the other in specific scenarios, its simpler to just say 'only use spaces'.
 
 ### 100-character columns
@@ -63,9 +63,9 @@ Like Pokémon Showdown, `@pkmn` does not use TypeScript's `enum` syntax and inst
 literal types to represent a restricted range of values. However, unlikely like Pokémon Showdown,
 `@pkmn` aims to follow a consistent naming style for the literal constants:
 
-- Prefer `'Title Case'` in almost all cases, and **always** if it is used to represent a concept
-  which would be be wrriten in `'Title Case'` if it appeared in regular text.
-- If the literals are all only single words and would never appear in `'Title Case'`, `lowercase`
+- Prefer `Title Case` in almost all cases, and **always** if it is used to represent a concept
+  which would be be wrriten in `Title Case` if it appeared in regular text.
+- If the literals are all only single words and would never appear in `Title Case`, `lowercase`
   should be used instead.
 - `camelCase` can be used if it is required to directly map to `keyof` some type (ie. to interop
   with method or field names which *do* follow `camelCase`).
