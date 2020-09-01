@@ -59,7 +59,7 @@ module.exports = {
     "no-self-compare": "error",
     "no-sequences": "error",
     "no-shadow-restricted-names": "error",
-    "no-shadow": "off",
+    "no-shadow": "error",
     "no-template-curly-in-string": "error",
     "no-throw-literal": "error",
     "no-undef": ["error", {"typeof": true}],
@@ -189,7 +189,6 @@ module.exports = {
         "@typescript-eslint/no-namespace": "off",
         "new-parens": "off", // used for the `new class {...}` pattern
         "no-prototype-builtins": "off",
-        "no-shadow": "error",
 
         // typescript-eslint defaults too strict
         "@typescript-eslint/ban-ts-comment": "off",
@@ -246,9 +245,13 @@ module.exports = {
         "@typescript-eslint/type-annotation-spacing": "error",
         "spaced-comment": ["error", "always", {"exceptions": ["*", "/"]}],
 
-        // whitespace, overriding base
+        // overriding base
         "indent": "off",
         "@typescript-eslint/indent": ["error", 2, {"flatTernaryExpressions": true}],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error", {"functions": false, "classes": false, "variables": false}],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
 
         // types
         "@typescript-eslint/restrict-plus-operands": "off",
