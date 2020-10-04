@@ -1,5 +1,6 @@
 # `@pkmn/eslint-config`
 
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 [![npm version](https://img.shields.io/npm/v/@pkmn/eslint-config.svg)](https://www.npmjs.com/package/@pkmn/eslint-config)&nbsp;
 
 ESLint configuration used by [`@pkmn`][3] projects based off of [Pokémon Showdown's][0] and
