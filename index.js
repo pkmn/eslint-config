@@ -162,7 +162,7 @@ module.exports = {
   },
   "overrides": [
     {
-      "files": ["**/*.ts"],
+      "files": ["**/*.ts", "**/*.tsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 9,
@@ -274,7 +274,7 @@ module.exports = {
       }
     },
     {
-      "files": ["**/*.test.ts"],
+      "files": ["**/*.test.ts", "**/*.test.js"],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest/style",
