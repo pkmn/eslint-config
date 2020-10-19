@@ -86,6 +86,7 @@ module.exports = {
     // syntax style (local syntactical, usually autofixable formatting decisions)
 
     "arrow-parens": "off",
+    "arrow-body-style": "error",
     "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
     "comma-dangle": ["error", {
       "arrays": "always-multiline",
@@ -179,12 +180,10 @@ module.exports = {
       ],
       "rules": {
         // TODO revisit
-        "prefer-object-spread": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/member-ordering": "off",
         // "@typescript-eslint/no-extraneous-class": "error",
         // "@typescript-eslint/no-type-alias": "error",
-        "@typescript-eslint/no-parameter-properties": "off",
 
         "@typescript-eslint/no-namespace": "off",
         "new-parens": "off", // used for the `new class {...}` pattern
@@ -225,6 +224,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/explicit-member-accessibility": ["error", {"accessibility": "no-public"}],
         "@typescript-eslint/member-delimiter-style": "error",
+        "@typescript-eslint/no-parameter-properties": "error",
         "@typescript-eslint/no-this-alias": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-as-const": "error",
@@ -232,6 +232,7 @@ module.exports = {
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-includes": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
+        "prefer-object-spread": "error",
         "@typescript-eslint/prefer-optional-chain": "error",
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/unified-signatures": "error",
