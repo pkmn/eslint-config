@@ -7,6 +7,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": ["index.js"],
   "dependencies": {
     "@typescript-eslint/parser": ">=4.28",
     "eslint": ">=7.30",
