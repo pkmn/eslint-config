@@ -1,6 +1,6 @@
 module.exports = {
   "parserOptions": {
-    "ecmaVersion": 9,
+    "ecmaVersion": 10,
     "sourceType": "script",
     "ecmaFeatures": {
       "globalReturn": true
