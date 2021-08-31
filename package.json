@@ -1,21 +1,23 @@
 {
   "name": "@pkmn/eslint-config",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "ESLint configuration from @pkmn based on Pokémon Showdown's style",
   "repository": "github:pkmn/eslint-config",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
-    "@typescript-eslint/parser": ">=4.28",
-    "eslint": ">=7.30",
-    "typescript": ">=4.3"
+    "@typescript-eslint/parser": ">=4.30",
+    "eslint": ">=7.32",
+    "typescript": ">=4.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=4.28",
-    "eslint-plugin-import": ">=2.23",
-    "eslint-plugin-jest": ">=24.3"
+    "@typescript-eslint/eslint-plugin": ">=4.30",
+    "eslint-plugin-import": ">=2.24",
+    "eslint-plugin-jest": ">=24.4"
   }
 }
