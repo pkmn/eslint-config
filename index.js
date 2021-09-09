@@ -238,7 +238,7 @@ module.exports = {
         "@typescript-eslint/unified-signatures": "error",
 
         "quotes": "off",
-        "@typescript-eslint/quotes": ["error", "single"],
+        "@typescript-eslint/quotes": ["error", "single", {"avoidEscape": true}],
         "semi": "off",
         "@typescript-eslint/semi": ["error", "always"],
 
