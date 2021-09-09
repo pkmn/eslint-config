@@ -1,6 +1,6 @@
 module.exports = {
   "parserOptions": {
-    "ecmaVersion": 10,
+    "ecmaVersion": 11,
     "sourceType": "script",
     "ecmaFeatures": {
       "globalReturn": true
@@ -166,7 +166,7 @@ module.exports = {
       "files": ["**/*.ts", "**/*.tsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "ecmaVersion": 9,
+        "ecmaVersion": 11,
         "sourceType": "module",
         "tsconfigRootDir": ".",
         "project": ["./tsconfig.json"]
