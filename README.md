@@ -12,7 +12,11 @@ ESLint configuration used by [`@pkmn`][3] projects based off of [Pokémon Showdo
 }
 ```
 
-**NOTE:** Ideally this package would extend a `@pokemon-showdown/eslint-config` and just override
+**NOTE:** [Due to how ESLint plugins work](https://github.com/eslint/eslint/issues/3458) you must
+depend on **all** of the peer dependencies for this package (even if you don't use Typescript or
+Jest etc).
+
+Ideally this package would extend a `@pokemon-showdown/eslint-config` and just override
 the places where it differs (eg. spaces vs. tabs, combining `.eslintrc-types.json` and
 `.eslintrc-no-types.json` into one file). Until then, this package copies Pokémon Showdown's configs
 and edits are made inline.
