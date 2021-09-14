@@ -1,6 +1,6 @@
 {
   "name": "@pkmn/eslint-config",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "ESLint configuration from @pkmn based on Pokémon Showdown's style",
   "repository": "github:pkmn/eslint-config",
   "license": "MIT",
