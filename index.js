@@ -275,7 +275,7 @@ module.exports = {
       }
     },
     {
-      "files": ["**/*.test.ts", "**/*.test.js"],
+      "files": ["**/*.test.ts", "**/*.test.js", "**/tests/*.ts", "**/tests/*.js"],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest/style",
@@ -285,6 +285,10 @@ module.exports = {
       ],
       "env": {
         "jest/globals": true
+      },
+      "rules": {
+        "@typescript-eslint/unbound-method": "off",
+        "jest/unbound-method": "error",
       },
     }
   ]
