@@ -175,9 +175,6 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],
-      "plugins": [
-        "import"
-      ],
       "rules": {
         // TODO revisit
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -212,7 +209,6 @@ module.exports = {
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/return-await": ["error", "in-try-catch"],
-        "import/no-extraneous-dependencies": "error",
         "no-dupe-class-members": "off",
         "no-unused-expressions": ["error", {"allowTernary": true}], // ternary is used to convert callbacks to Promises
 
