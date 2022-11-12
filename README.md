@@ -69,7 +69,7 @@ literal types to represent a restricted range of values. However, unlikely like 
 `@pkmn` aims to follow a consistent naming style for the literal constants:
 
 - Prefer `Title Case` in almost all cases, and **always** if it is used to represent a concept
-  which would be be wrriten in `Title Case` if it appeared in regular text.
+  which would be be written in `Title Case` if it appeared in regular text.
 - If the literals are all only single words and would never appear in `Title Case`, `lowercase`
   should be used instead.
 - `camelCase` can be used if it is required to directly map to `keyof` some type (ie. to interop
