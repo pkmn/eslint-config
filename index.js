@@ -11,6 +11,8 @@ module.exports = {
     "es6": true,
     "node": true
   },
+  "settings": {"jest": {"version": 29}},
+  "plugins": ["import"],
   "extends": "eslint:recommended",
   "rules": {
     "no-console": "off",
@@ -145,7 +147,7 @@ module.exports = {
     "keyword-spacing": ["error", {"before": true, "after": true}],
     "lines-around-comment": "off",
     "no-mixed-spaces-and-tabs": "error",
-    "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 1}],
+    "no-multiple-empty-lines": ["error", {"max": 1}],
     "no-trailing-spaces": ["error", {"ignoreComments": false}],
     "object-curly-spacing": ["error", "never"],
     "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
@@ -160,6 +162,16 @@ module.exports = {
     "space-infix-ops": "error",
     "space-unary-ops": ["error", {"words": true, "nonwords": false}],
     "template-curly-spacing": ["error", "never"],
+
+    // imports
+    "import/order":  ["error", {
+      "newlines-between": "always",
+      "alphabetize": {"order": "asc", "caseInsensitive": true}
+    }],
+    "sort-imports": ["error", {
+      "ignoreDeclarationSort": true,
+      "allowSeparatedGroups": true
+    }]
   },
   "overrides": [
     {
