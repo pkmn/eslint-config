@@ -234,7 +234,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/explicit-member-accessibility": ["error", {"accessibility": "no-public"}],
         "@typescript-eslint/member-delimiter-style": "error",
-        "@typescript-eslint/no-parameter-properties": "error",
+        "@typescript-eslint/parameter-properties": "error",
         "@typescript-eslint/no-this-alias": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-as-const": "error",
