@@ -142,7 +142,7 @@ module.exports = {
     "eol-last": ["error", "always"],
     "func-call-spacing": "error",
     "function-paren-newline": ["error", "consistent"],
-    "indent": ["error", 2, {"flatTernaryExpressions": true}],
+    "indent": ["error", 2, {"flatTernaryExpressions": true, "SwitchCase": 1}],
     "key-spacing": "error",
     "keyword-spacing": ["error", {"before": true, "after": true}],
     "lines-around-comment": "off",
@@ -258,7 +258,7 @@ module.exports = {
 
         // overriding base
         "indent": "off",
-        "@typescript-eslint/indent": ["error", 2, {"flatTernaryExpressions": true}],
+        "@typescript-eslint/indent": ["error", 2, {"flatTernaryExpressions": true, "SwitchCase": 1}],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error", {"functions": false, "classes": false, "variables": false}],
         "no-shadow": "off",
