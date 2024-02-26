@@ -12,7 +12,7 @@ module.exports = {
     "node": true
   },
   "settings": {"jest": {"version": 29}},
-  "plugins": ["import"],
+  "plugins": ["import", "@stylistic/eslint-plugin"],
   "extends": "eslint:recommended",
   "rules": {
     "no-console": "off",
@@ -87,28 +87,29 @@ module.exports = {
 
     // syntax style (local syntactical, usually autofixable formatting decisions)
 
-    "arrow-parens": "off",
+    "@stylistic/arrow-parens": "off",
     "arrow-body-style": "error",
-    "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
-    "comma-dangle": ["error", {
+    "@stylistic/brace-style": ["error", "1tbs", {"allowSingleLine": true}],
+    "@stylistic/comma-dangle": ["error", {
       "arrays": "always-multiline",
       "objects": "always-multiline",
       "imports": "always-multiline",
       "exports": "always-multiline",
+      "tuples": "always-multiline",
       "functions": "ignore"
     }],
-    "comma-style": ["error", "last"],
+    "@stylistic/comma-style": ["error", "last"],
     "curly": ["error", "multi-line", "consistent"],
     "dot-notation": "off",
     "max-len": ["error", {"code": 100, "ignoreUrls": true}],
-    "new-parens": "error",
+    "@stylistic/new-parens": "error",
     "no-array-constructor": "error",
     "no-div-regex": "error",
     "no-duplicate-imports": "error",
     "no-extra-parens": "off",
-    "no-floating-decimal": "error",
+    "@stylistic/no-floating-decimal": "error",
     "no-mixed-requires": "error",
-    "no-multi-spaces": "error",
+    "@stylistic/no-multi-spaces": "error",
     "no-new-object": "error",
     "no-octal-escape": "error",
     "no-return-assign": ["error", "except-parens"],
@@ -128,40 +129,40 @@ module.exports = {
     "semi": ["error", "always"],
     "sort-vars": "off",
     "vars-on-top": "off",
-    "wrap-iife": ["error", "inside"],
-    "wrap-regex": "off",
+    "@stylistic/wrap-iife": ["error", "inside"],
+    "@stylistic/wrap-regex": "off",
     "yoda": ["error", "never", { "exceptRange": true }],
 
     // whitespace
-    "array-bracket-spacing": ["error", "never"],
-    "arrow-spacing": ["error", {"before": true, "after": true}],
-    "block-spacing": ["error", "always"],
-    "comma-spacing": ["error", {"before": false, "after": true}],
-    "computed-property-spacing": ["error", "never"],
-    "dot-location": ["error", "property"],
-    "eol-last": ["error", "always"],
-    "func-call-spacing": "error",
-    "function-paren-newline": ["error", "consistent"],
-    "indent": ["error", 2, {"flatTernaryExpressions": true, "SwitchCase": 1}],
-    "key-spacing": "error",
-    "keyword-spacing": ["error", {"before": true, "after": true}],
-    "lines-around-comment": "off",
-    "no-mixed-spaces-and-tabs": "error",
-    "no-multiple-empty-lines": ["error", {"max": 1}],
-    "no-trailing-spaces": ["error", {"ignoreComments": false}],
-    "object-curly-spacing": ["error", "never"],
-    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
-    "padded-blocks": ["error", "never"],
-    "padding-line-between-statements": "off",
-    "rest-spread-spacing": ["error", "never"],
-    "semi-spacing": ["error", {"before": false, "after": true}],
-    "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never"}],
-    "spaced-comment": ["error", "always", {"exceptions": ["*"]}],
-    "space-in-parens": ["error", "never"],
-    "space-infix-ops": "error",
-    "space-unary-ops": ["error", {"words": true, "nonwords": false}],
-    "template-curly-spacing": ["error", "never"],
+    "@stylistic/array-bracket-spacing": ["error", "never"],
+    "@stylistic/arrow-spacing": ["error", {"before": true, "after": true}],
+    "@stylistic/block-spacing": ["error", "always"],
+    "@stylistic/comma-spacing": ["error", {"before": false, "after": true}],
+    "@stylistic/computed-property-spacing": ["error", "never"],
+    "@stylistic/dot-location": ["error", "property"],
+    "@stylistic/eol-last": ["error", "always"],
+    "@stylistic/func-call-spacing": "error",
+    "@stylistic/function-paren-newline": ["error", "consistent"],
+    "@stylistic/indent": ["error", 2, {"flatTernaryExpressions": true, "SwitchCase": 1}],
+    "@stylistic/key-spacing": "error",
+    "@stylistic/keyword-spacing": ["error", {"before": true, "after": true}],
+    "@stylistic/lines-around-comment": "off",
+    "@stylistic/no-mixed-spaces-and-tabs": "error",
+    "@stylistic/no-multiple-empty-lines": ["error", {"max": 1}],
+    "@stylistic/no-trailing-spaces": ["error", {"ignoreComments": false}],
+    "@stylistic/object-curly-spacing": ["error", "never"],
+    "@stylistic/operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+    "@stylistic/padded-blocks": ["error", "never"],
+    "@stylistic/padding-line-between-statements": "off",
+    "@stylistic/rest-spread-spacing": ["error", "never"],
+    "@stylistic/semi-spacing": ["error", {"before": false, "after": true}],
+    "@stylistic/space-before-blocks": ["error", "always"],
+    "@stylistic/space-before-function-paren": ["error", {"anonymous": "always", "named": "never"}],
+    "@stylistic/spaced-comment": ["error", "always", {"exceptions": ["*"]}],
+    "@stylistic/space-in-parens": ["error", "never"],
+    "@stylistic/space-infix-ops": "error",
+    "@stylistic/space-unary-ops": ["error", {"words": true, "nonwords": false}],
+    "@stylistic/template-curly-spacing": ["error", "never"],
 
     // imports
     "import/order":  ["error", {
@@ -195,7 +196,7 @@ module.exports = {
         // "@typescript-eslint/no-type-alias": "error",
 
         "@typescript-eslint/no-namespace": "off",
-        "new-parens": "off", // used for the `new class {...}` pattern
+        "@stylistic/new-parens": "off", // used for the `new class {...}` pattern
         "no-prototype-builtins": "off",
 
         // typescript-eslint defaults too strict
@@ -253,16 +254,16 @@ module.exports = {
         "@typescript-eslint/semi": ["error", "always"],
 
         // whitespace
-        "@typescript-eslint/type-annotation-spacing": "error",
-        "spaced-comment": ["error", "always", {"exceptions": ["*", "/"]}],
+        "@stylistic/type-annotation-spacing": "error",
+        "@stylistic/spaced-comment": ["error", "always", {"exceptions": ["*", "/"]}],
 
         // overriding base
-        "indent": "off",
-        "@typescript-eslint/indent": ["error", 2, {"flatTernaryExpressions": true, "SwitchCase": 1}],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error", {"functions": false, "classes": false, "variables": false}],
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"],
+        // BUG: conflicts with @stylistic/object-curly-spacing in TypeScript types
+        "@stylistic/block-spacing": "off",
 
         // types
         "@typescript-eslint/restrict-plus-operands": "off",
