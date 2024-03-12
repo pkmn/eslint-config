@@ -182,7 +182,8 @@ module.exports = {
         "ecmaVersion": 11,
         "sourceType": "module",
         "tsconfigRootDir": ".",
-        "project": ["./tsconfig.json"]
+        "project": ["./tsconfig.json"],
+        "warnOnUnsupportedTypeScriptVersion": false
       },
       "extends": [
         "plugin:@typescript-eslint/recommended",
