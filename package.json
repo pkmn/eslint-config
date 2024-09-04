@@ -1,6 +1,6 @@
 {
   "name": "@pkmn/eslint-config",
-  "version": "8.2.0",
+  "version": "8.3.0",
   "description": "ESLint configuration from @pkmn based on Pokémon Showdown's style",
   "repository": "github:pkmn/eslint-config",
   "license": "MIT",
@@ -12,8 +12,8 @@
   ],
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^2.7.2",
-    "@typescript-eslint/eslint-plugin": "^8.4",
-    "@typescript-eslint/parser": "^8.4",
+    "@typescript-eslint/eslint-plugin": "<8",
+    "@typescript-eslint/parser": "<8",
     "eslint": "<9",
     "eslint-plugin-import": ">=2.30",
     "eslint-plugin-jest": ">=28.8",
