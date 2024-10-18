@@ -6,10 +6,10 @@
 ESLint configuration used by [`@pkmn`][3] projects based off of [Pokémon Showdown's][0] and
 [Google’s][2] style guidelines:
 
-```json
-{
-  "extends": "@pkmn"
-}
+```ts
+import pkmn from "@pkmn/eslint-config";
+
+export default pkmn;
 ```
 
 **NOTE:** [Due to how ESLint plugins work](https://github.com/eslint/eslint/issues/3458) you must
