@@ -150,7 +150,7 @@ export default [
       "@stylistic/computed-property-spacing": ["error", "never"],
       "@stylistic/dot-location": ["error", "property"],
       "@stylistic/eol-last": ["error", "always"],
-      "@stylistic/func-call-spacing": "error",
+      "@stylistic/function-call-spacing": "error",
       "@stylistic/function-paren-newline": ["error", "consistent"],
       "@stylistic/indent": ["error", 2, {flatTernaryExpressions: true, SwitchCase: 1}],
       "@stylistic/key-spacing": "error",
