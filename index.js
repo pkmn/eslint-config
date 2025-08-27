@@ -200,7 +200,6 @@ export default [
       ecmaVersion: 11,
       sourceType: "module",
       parserOptions: {
-        tsconfigRootDir: ".",
         project: ["./tsconfig.json"],
         warnOnUnsupportedTypeScriptVersion: false,
       },
