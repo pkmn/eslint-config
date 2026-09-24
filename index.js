@@ -1,6 +1,6 @@
 import jest from "eslint-plugin-jest";
 import js from "@eslint/js";
-import import_ from "eslint-plugin-import";
+import importX from "eslint-plugin-import-x";
 import stylistic from "@stylistic/eslint-plugin";
 import ts from 'typescript-eslint';
 import globals from 'globals';
@@ -20,7 +20,7 @@ export default [
     },
     settings: {jest: {version: 29}},
     plugins: {
-      import: import_,
+      "import-x": importX,
       "@stylistic": stylistic,
     },
     rules: {
@@ -174,7 +174,7 @@ export default [
       "@stylistic/template-curly-spacing": ["error", "never"],
 
         // imports
-      "import/order": ["error", {
+      "import-x/order": ["error", {
         "newlines-between": "always",
         "alphabetize": {
           order: "asc",
